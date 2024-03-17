@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:9000"  # Change the port as needed
+    volumes:
+      - .:/var/www/html
